@@ -1,6 +1,6 @@
 # Site settings
 title: Davin Kelly
-description: "Thinker // Designer // YouTuber"
+description: "Thinker // Developer // Worker"
 email: email@email.com
 
 # Build settings
@@ -11,4 +11,5 @@ port: 3000
 
 sass:
   sass_dir: assets/css
-  style: :compressed
+  # style: :compressed
+  style: nested

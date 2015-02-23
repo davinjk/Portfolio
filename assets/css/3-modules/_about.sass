@@ -1,0 +1,14 @@
+.about
+	h3
+		@extend %small-bold
+		color: $accent-color
+		text-align: center
+
+	.face-lockup
+		max-width: 780px
+		+display(flex)
+
+		.face-img
+			+size(100px)
+			background: url(/assests/img/face.jpg)
+
