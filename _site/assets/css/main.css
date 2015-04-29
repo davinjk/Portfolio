@@ -237,6 +237,7 @@ header {
   background: url(../img/hero-bg.jpg) center center;
   background-size: cover; }
   header .logo {
+    background: url(/assets/img/logo.png);
     height: 50px;
     width: 50px;
     float: left;
@@ -261,10 +262,17 @@ header {
     margin-bottom: 20px;
     clear: both;
     padding-top: 100px; }
+    @media screen and (max-width: 641px) {
+      header h1 {
+        font-size: 48px; } }
     header h1 span {
       display: inline-block;
       padding: 0.2em 0.5em;
       border: white solid 10px; }
+      @media screen and (max-width: 641px) {
+        header h1 span {
+          border: white solid 5px;
+          padding: 0.2em 0.3em; } }
   header .kicker {
     text-align: center;
     letter-spacing: 0.05em;
@@ -281,6 +289,7 @@ footer {
       display: table;
       clear: both; }
   footer .logo {
+    background: url(/assets/img/logo.png);
     height: 50px;
     width: 50px;
     float: left;
@@ -341,18 +350,18 @@ footer {
     order: 3; }
   .about .face-lockup [class^="icon-"] {
     height: 100px;
-    width: 100px;
-    background: #e5eaee;
-    border-radius: 50%; }
-    .about .face-lockup [class^="icon-"] path {
-      fill: #c99065; }
+    width: 100px; }
     .about .face-lockup [class^="icon-"].icon-pencil {
+      background: url(/assets/img/icon-pencil.png);
       order: 1; }
     .about .face-lockup [class^="icon-"].icon-mouse {
+      background: url(/assets/img/icon-mouse.png);
       order: 2; }
     .about .face-lockup [class^="icon-"].icon-browser {
+      background: url(/assets/img/icon-browser.png);
       order: 4; }
     .about .face-lockup [class^="icon-"].icon-video {
+      background: url(/assets/img/icon-video.png);
       order: 5; }
 @media screen and (max-width: 650px) {
   .about .face-lockup {
