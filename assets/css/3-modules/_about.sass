@@ -16,23 +16,23 @@
 			+size(200px)
 			border-radius: 50%
 			background: url(/assets/img/face.jpg)
-			order: 3
+			+order(3)
 
 		[class^="icon-"]
 			+size(100px)
 
 			&.icon-pencil
 				background: url(/assets/img/icon-pencil.png)
-				order: 1
+				+order(1)
 			&.icon-mouse
 				background: url(/assets/img/icon-mouse.png)
-				order: 2
+				+order(2)
 			&.icon-browser
 				background: url(/assets/img/icon-browser.png)
-				order: 4
+				+order(4)
 			&.icon-video
 				background: url(/assets/img/icon-video.png) 
-				order: 5
+				+order(5)
 
 	@media screen and (max-width: 650px)
 		.face-lockup
@@ -91,7 +91,7 @@
 					margin: 2px
 
 			@for $i from 1 through 10
-				&.skill-#{$i} span:nth-child(n+#{$i})
+				&.skill-#{$i} span:nth-child(n+#{$i + 1})
 					@extend %skill-color
 
 @media screen and (max-width: 641px)
