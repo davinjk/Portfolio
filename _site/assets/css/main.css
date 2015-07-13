@@ -147,6 +147,12 @@ td, th {
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(//themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+h3, header nav a, header .kicker, footer .content-wrap a {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #c99065;
@@ -226,12 +232,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-header nav a, header .kicker, footer .content-wrap a, .about h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase; }
+h3 {
+  color: #e1c185;
+  text-align: center;
+  padding: 100px 0 30px; }
 
+@media screen and (max-width: 480px) {
+  h3 {
+    padding: 50px 0 50px; } }
 header {
   height: 450px;
   background: url(../img/hero-bg.jpg) center center;
@@ -310,10 +318,6 @@ footer {
       footer .content-wrap a:hover {
         color: rgba(0, 0, 0, 0.7); }
 
-.about h3 {
-  color: #e1c185;
-  text-align: center;
-  padding: 100px 0 30px; }
 .about .face-lockup {
   max-width: 780px;
   display: -webkit-box;
@@ -333,15 +337,15 @@ footer {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: center; }
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
   .about .face-lockup .face-img {
     height: 200px;
     width: 200px;
@@ -403,8 +407,7 @@ footer {
       display: block;
       background-position: center center;
       background-repeat: no-repeat;
-      width: auto;
-      margin-bottom: 30px; }
+      margin: 0 auto 30px auto; }
     .about .face-lockup [class^="icon-"] {
       margin: 10px; } }
 .about .blurb {
